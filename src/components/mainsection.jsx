@@ -35,7 +35,7 @@ export default function MainSection() {
     <div className="main-section">
       <p className="text-lg mb-4 text-center">Here you can find a list of all Pokémon.</p>
       {pokemonList.length > 0 ? (
-        <div className="grid grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-4 gap-6 px-4 max-w-7xl mx-auto text-center">
           {pokemonList.map((pokemon, index) => (
             <Card key={index} title={pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}>
               <a href={pokemon.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
