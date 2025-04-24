@@ -33,7 +33,7 @@ export default function MainSection() {
 
   return (
     <div className="main-section">
-      <p className="text-lg mb-4">Here you can find a list of all Pokémon.</p>
+      <p className="text-lg mb-4 text-center">Here you can find a list of all Pokémon.</p>
       {pokemonList.length > 0 ? (
         <div className="grid grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
           {pokemonList.map((pokemon, index) => (
