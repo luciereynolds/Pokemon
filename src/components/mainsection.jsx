@@ -5,7 +5,7 @@ export default function MainSection() {
   const [pokemonList, setPokemonList] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPokemon, setTotalPokemon] = useState(0);
-  const limit = 16;
+  const limit = 12;
 
   useEffect(() => {
     const offset = (currentPage - 1) * limit;
